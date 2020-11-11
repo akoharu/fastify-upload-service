@@ -16,7 +16,7 @@ if (process.env.NODE_ENV == 'production') {
 const app = Fastify({
   logger: logger,
   pluginTimeout: 10000,
-  bodyLimit: 1048576*5
+  bodyLimit: 1048576*10
 })
 
 // Register your application as a normal plugin.
