@@ -1,0 +1,32 @@
+{
+  "name": "STORAGE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.0",
+    "aws-sdk": "^2.789.0",
+    "dotenv": "^8.2.0",
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.0.2",
+    "fastify-cli": "^2.2.0",
+    "fastify-cors": "^4.1.0",
+    "fastify-multipart": "^3.3.0",
+    "fastify-plugin": "^2.0.0",
+    "pino-pretty": "^4.3.0"
+  },
+  "devDependencies": {
+    "tap": "^14.0.0"
+  }
+}
