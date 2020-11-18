@@ -11,9 +11,11 @@ module.exports = async function (fastify, opts) {
   // This loads all plugins defined in plugins
   // those should be support plugins that are reused
   // through your application
-  fastify.register(require('fastify-multipart'), {
-    addToBody: true
-  });
+  fastify.register(require('fastify-static'), {
+    root: path.join(__dirname, 'files'),
+    prefix: '/files/', // optional: default '/'
+  })
+  
   fastify.register(AutoLoad, {
     dir: path.join(__dirname, 'plugins'),
     options: Object.assign({}, opts)

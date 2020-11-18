@@ -22,8 +22,9 @@
     "fastify-autoload": "^3.0.2",
     "fastify-cli": "^2.2.0",
     "fastify-cors": "^4.1.0",
-    "fastify-multipart": "^3.3.0",
     "fastify-plugin": "^2.0.0",
+    "fastify-static": "^3.3.0",
+    "fs-extra": "^9.0.1",
     "pino-pretty": "^4.3.0"
   },
   "devDependencies": {
